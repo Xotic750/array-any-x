@@ -1,6 +1,6 @@
 {
   "name": "array-any-x",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Like Array.some but does not skip holes.",
   "homepage": "https://github.com/Xotic750/array-any-x",
   "author": {
