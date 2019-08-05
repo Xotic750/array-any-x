@@ -34,6 +34,7 @@ var getIterableLengthPair = function getIterableLengthPair(object) {
  * This method tests whether some element in the array passes the test
  * implemented by the provided function.
  *
+ * @function any
  * @param {Array} array - The array to iterate over.
  * @param {Function} callBack - Function to test for each element.
  * @param {*} [thisArg] - Value to use as this when executing callback.

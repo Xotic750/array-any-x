@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2019-present",
-  "date": "2019-08-05T12:57:04.576Z",
+  "date": "2019-08-05T13:29:59.110Z",
   "describe": "",
   "description": "Like Array.some but does not skip holes.",
   "file": "array-any-x.js",
-  "hash": "12590fc79a3d4e596956",
+  "hash": "6f633a6a84aeed6de994",
   "license": "MIT",
   "version": "1.0.0"
 }
@@ -1665,6 +1665,7 @@ var array_any_x_esm_getIterableLengthPair = function getIterableLengthPair(objec
  * This method tests whether some element in the array passes the test
  * implemented by the provided function.
  *
+ * @function any
  * @param {Array} array - The array to iterate over.
  * @param {Function} callBack - Function to test for each element.
  * @param {*} [thisArg] - Value to use as this when executing callback.
