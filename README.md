@@ -46,7 +46,7 @@ Tests whether some element passes the provided function.
 
 ### `module.exports` ⇒ <code>boolean</code> ⏏
 
-This method tests whether some element in the array passes the test
+This method tests whether any element in the array passes the test
 implemented by the provided function.
 
 **Kind**: Exported member  
