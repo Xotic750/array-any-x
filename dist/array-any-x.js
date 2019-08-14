@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2019-present",
-  "date": "2019-08-13T13:58:57.536Z",
+  "date": "2019-08-14T15:09:12.697Z",
   "describe": "",
   "description": "Like Array.some but does not skip holes.",
   "file": "array-any-x.js",
-  "hash": "f613d173cf0ffde9d1ee",
+  "hash": "7d2b1035137f611c5909",
   "license": "MIT",
-  "version": "1.0.1"
+  "version": "1.1.0"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -1279,7 +1279,8 @@ var to_primitive_x_esm_toPrimitive = function toPrimitive(input, preferredType) 
  *
  * @type number
  */
-/* harmony default export */ var nan_x_esm = (0 / 0);
+var constantNAN = 0 / 0;
+/* harmony default export */ var nan_x_esm = (constantNAN);
 
 
 // CONCATENATED MODULE: ./node_modules/parse-int-x/dist/parse-int-x.esm.js
@@ -1458,7 +1459,8 @@ var is_nan_x_esm_isNaN = function isNaN(value) {
  *
  * @type number
  */
-/* harmony default export */ var infinity_x_esm = (1 / 0);
+var constantInfinity = 1 / 0;
+/* harmony default export */ var infinity_x_esm = (constantInfinity);
 
 
 // CONCATENATED MODULE: ./node_modules/is-finite-x/dist/is-finite-x.esm.js
@@ -1641,14 +1643,15 @@ var toStringSymbolsSupported = function toStringSymbolsSupported(value) {
  * not. Otherwise returns the `callback`.
  *
  * @param {*} callback - The argument to be tested.
+ * @param {string} [message] - An alternative user message.
  * @throws {TypeError} Throws if `callback` is not a function.
  * @returns {*} Returns `callback` if it is function.
  */
 
-var assert_is_function_x_esm_assertIsFunction = function assertIsFunction(callback) {
+var assert_is_function_x_esm_assertIsFunction = function assertIsFunction(callback, message) {
   if (is_function_x_esm(callback) === false) {
-    var msg = is_primitive_default()(callback) ? to_string_symbols_supported_x_esm(callback) : '#<Object>';
-    throw new TypeError("".concat(msg, " is not a function"));
+    var msg = arguments.length > 1 ? to_string_symbols_supported_x_esm(message) : "".concat(is_primitive_default()(callback) ? to_string_symbols_supported_x_esm(callback) : '#<Object>', " is not a function");
+    throw new TypeError(msg);
   }
 
   return callback;
