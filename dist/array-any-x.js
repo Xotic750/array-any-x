@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2019-present",
-  "date": "2019-08-28T15:23:29.078Z",
+  "date": "2019-08-28T17:20:14.805Z",
   "describe": "",
   "description": "Like Array.some but does not skip holes.",
   "file": "array-any-x.js",
   "hash": "409b25f3b1c27027e929",
   "license": "MIT",
-  "version": "1.1.1"
+  "version": "1.1.2"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
