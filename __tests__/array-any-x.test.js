@@ -204,7 +204,7 @@ describe('any', () => {
     const callback = jest.fn();
     const string = '1';
     any(string, callback);
-    expect(callback).toHaveBeenCalledWith('1', 0, string);
+    expect(callback).toHaveBeenCalledWith('1', 0, Object(string));
   });
 
   itHasDoc('should work wih DOM elements', () => {
